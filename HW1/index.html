@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>HW1</title>
+</head>
+<body>
+    
+    <h1 id = "signIn">Sign Up</h1>
+    <form> 
+       
+            <div class= "inputTogetherSideBySide">
+            <input id ="firstName" type="text" placeholder="First Name">
+            <input id ="lastName" type="text" placeholder="Last Name">
+            </div>
+        
+            <input id ="mobileNumber" type="tel" placeholder="Mobile No." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        
+            <input id ="emailAddress" type="email" placeholder="Email Address">
+        
+            <div class= "inputTogetherSideBySide">
+            <input id ="password" type="password" placeholder="Password">
+            <input id ="passwordConfirm" type="password" placeholder="Confirm Password">
+            </div>
+ 
+        
+        
+        <div id = termsElements>
+            <div id = "checkboxAndAgree">
+                <input id ="termsAndConditions" type="checkbox">
+                <label for="termsAndConditions">I Agree</label>
+            </div>
+        
+            <p>By clicking
+            <button class = "blueButton" id = termsAndConditionsButton>Register</button>
+            , you agree to the
+            <a href>Terms and Conditions</a>
+            set<br> out by this site, including our Cookie Use.</p>
+        
+        </div>
+
+        <div id = "registerAndSignInButtons">
+            <input class = "blueButton" id ="registerButton" type="button" value="Register">
+            <input id ="signUpButton" type="button" value="Sign In">
+
+        </div>
+
+    </form>
+
+
+
+    
+</body>
+</html>
