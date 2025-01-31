@@ -1,0 +1,60 @@
+body{
+    width: 100%;
+}
+
+#header{
+    align-items: center;
+    justify-items: center;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#scoreLine{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: bold;
+}
+h1{
+    margin-bottom: 0;
+}
+
+#scoreCounter{
+    width: auto;
+    margin-left: .25rem;
+    padding: 0;
+    font-size: 1rem;
+    border: none;
+    box-sizing: content-box;
+   
+}
+
+#timerCountDown{
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 1rem;
+    top:0
+}
+
+#gameBoard{
+    align-items: center;
+    justify-items: center;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameCircles button{
+    border: 2px brown solid ;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
+
