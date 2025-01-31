@@ -1,6 +1,3 @@
-
-
-
 const View = (() => {
 
     const domSelector = {
@@ -10,8 +7,6 @@ const View = (() => {
         allGameButtons: document.querySelectorAll(".gameCircles button"),
         
     }
-    
-
     
     const renderMole = (button)=>{
         button.innerHTML = `<img src ="mole.jpeg" height = "100%" width = "auto"></img>;`;
@@ -74,8 +69,6 @@ const Model = ((view) => {
 
 const Controller = ((view, model) => {
 
-
-
     const {domSelector, renderMole,removeMole} = view;
     const {State} = model;
     const state = new State();
@@ -102,15 +95,12 @@ const Controller = ((view, model) => {
             state.updateScore();
             domSelector.scoreCounter.textContent = state.getScore();   
 
-  
             //getting the index of the button that was clicked
-
             let indexOfClicked = Array.from(domSelector.allGameButtons).indexOf(clickedButton);
 
             //need to remove button from active mole buttons in state 
             state.removeMole(indexOfClicked);
         }
-
        };
 
     domSelector.startButton.addEventListener("click",()=>{ // on start button what happens 
@@ -143,10 +133,7 @@ const Controller = ((view, model) => {
             }
 
         },1000);
-
        });
-
-
 
     const finishGame = () =>{
         clearInterval(entireTimeInterval);
@@ -156,11 +143,5 @@ const Controller = ((view, model) => {
         domSelector.scoreCounter.textContent = 0;
         domSelector.allGameButtons.forEach((button)=>removeMole(button));
         alert("Time is Over !");
-
-        // alert 
     };
-
-
 })(View, Model)
-
-// Controller.bootstrap()
